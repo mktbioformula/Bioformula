@@ -1,0 +1,47 @@
+<ui:composition template="/WEB-INF/template/LayoutPadrao.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<ui:define name="titulo">Novo Representante</ui:define>
+
+	<ui:define name="corpo">
+		<h1>Novo Representante</h1>
+
+		<p:toolbar style="margin-top: 20px">
+			<p:toolbarGroup>
+				<p:button value="Novo" outcome="/representante/CadastroRepresentante" />
+				<p:commandButton value="Salvar" id="botaoSalvar" />
+			</p:toolbarGroup>
+			<p:toolbarGroup align="right">
+				<p:button value="Pesquisa" />
+			</p:toolbarGroup>
+		</p:toolbar>
+
+		<p:panelGrid columns="2" id="painel"
+			style="width: 100%; margin-top: 20px" columnClasses="rotulo, campo">
+			<p:outputLabel value="Código" for="codigo" />
+			<p:inputText id="codigo" size="05" maxlength="05" />
+
+			<p:outputLabel value="Nome" for="nome" />
+			<p:inputText id="nome" size="60" maxlength="80" />
+
+			<p:outputLabel value="CPF" for="cpf" />
+			<p:inputMask mask="999.999.999-99" id="cpf" size="20" maxlength="20" />
+
+			<p:outputLabel value="CNPJ" for="cnpj" />
+			<p:inputMask mask="99.999.999/9999-99" id="cnpj" size="20"
+				maxlength="20" />
+
+			<p:outputLabel value="Cidade" for="cidade" />
+			<p:inputText id="cidade" size="40" maxlength="40" />
+
+			<p:outputLabel value="Estado" for="estado" />
+			<p:inputText id="estado" size="02" maxlength="02" />
+
+		</p:panelGrid>
+
+	</ui:define>
+</ui:composition>

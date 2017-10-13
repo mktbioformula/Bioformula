@@ -1,0 +1,62 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<p:panelGrid columns="4" style="width: 100%"
+		columnClasses="rotulo, campo, rotulo, campo">
+
+		<p:outputLabel value="QTD Litros Dia" for="qtdlitrosdia" />
+		<p:inputText id="qtdlitrosdia" size="5" />
+
+		<p:outputLabel value="QTD Vacas Ordenhadas" for="qtdvacasordenhadas" />
+		<p:inputText id="qtdvacasordenhadas" size="5" />
+
+		<p:outputLabel value="QTD de Lotes" for="qtddelotes" />
+		<p:inputText id="qtddelotes" size="5" />
+
+		<p:outputLabel value="QTD Vacas com Mastite" for="qtdvacascommastite" />
+		<p:inputText id="qtdvacascommastite" size="5" />
+
+		<p:outputLabel value="QTD CCS/ml de Leite Atual" for="qtdcssatual" />
+		<p:inputText id="qtdcssatual" size="5" />
+
+		<p:outputLabel value="QTD Volume de Leite Descartado (Litros)"
+			for="qtdvolumeldescartado" />
+		<p:inputText id="qtdvolumeldescartado" size="5" />
+
+		<p:outputLabel value="Laticínio" for="laticinio" />
+		<p:inputText id="laticinio" size="40" />
+
+		<p:outputLabel value="Valor Litro de Leite (Atual)"
+			for="valorlitroleite" />
+		<p:inputText id="valorlitroleite" size="5" />
+
+		<p:outputLabel value="QTD de Bezerras Total" for="qtdbezerrastotal" />
+		<p:inputText id="qtdbezerrastotal" size="5" />
+
+		<p:outputLabel value="QTD de Bezerras com Diarreia"
+			for="qtdbezerradiarreia" />
+		<p:inputText id="qtdbezerradiarreia" size="5" />
+
+		<p:outputLabel value="Gasto Mensal com Medicamento (R$)"
+			for="gastomensal" />
+		<p:inputText id="gastomensal" size="5" />
+		
+		<p:outputLabel value="Fabrica Própria Ração?" for="fabrica" />
+		<p:selectOneRadio id="fabrica" value="">
+			<f:selectItem itemLabel="Sim" itemValue="Sim" />
+			<f:selectItem itemLabel="Não" itemValue="Não" />
+		</p:selectOneRadio>
+
+		<p:outputLabel value="Fornecedor da Ração ou Núcleo"
+			for="fornecedorracao" />
+		<p:inputText id="fornecedorracao" size="40" />
+	
+		<p:outputLabel value="Observações" for="observacao" />
+		<p:inputText id="observacao" size="100" />
+
+	</p:panelGrid>
+
+</ui:composition>

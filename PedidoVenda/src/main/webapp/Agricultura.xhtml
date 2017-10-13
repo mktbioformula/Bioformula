@@ -1,0 +1,88 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<p:panelGrid columns="4" style="width: 100%"
+		columnClasses="rotulo, campo, rotulo, campo">
+
+		<p:outputLabel value="Área Milho em Ha" for="areamilho" />
+		<p:inputText id="areamilho" size="5" />
+
+		<p:outputLabel value="Produtividade - Sacas ou Ton por Ha" for="prod1" />
+		<p:inputText id="prod1" size="5" />
+
+		<p:outputLabel value="Área Sorgo em Ha" for="areasorgo" />
+		<p:inputText id="areasorgo" size="5" />
+
+		<p:outputLabel value="Produtividade - Sacas ou Ton por Ha" for="prod2" />
+		<p:inputText id="prod2" size="5" />
+
+		<p:outputLabel value="Área Milheto em Ha" for="areamilheto" />
+		<p:inputText id="areamilheto" size="5" />
+
+		<p:outputLabel value="Produtividade - Sacas ou Ton por Ha" for="prod3" />
+		<p:inputText id="prod3" size="5" />
+
+		<p:outputLabel value="Área Feijão em Ha" for="areafeijao" />
+		<p:inputText id="areafeijao" size="5" />
+
+		<p:outputLabel value="Produtividade - Sacas ou Ton por Ha" for="prod4" />
+		<p:inputText id="prod4" size="5" />
+
+		<p:outputLabel value="Área Algodão em Ha" for="areaalgodao" />
+		<p:inputText id="areaalgodao" size="5" />
+
+		<p:outputLabel value="Produtividade - Sacas ou Ton por Ha" for="prod5" />
+		<p:inputText id="prod5" size="5" />
+
+		<p:outputLabel value="Área Cana de Açucar em Ha" for="areacana" />
+		<p:inputText id="areacana" size="5" />
+
+		<p:outputLabel value="Produtividade - Sacas ou Ton por Ha" for="prod6" />
+		<p:inputText id="prod6" size="5" />
+
+		<p:outputLabel value="Área Outros em Ha" for="areaoutros" />
+		<p:inputText id="areaoutros" size="5" />
+
+		<p:outputLabel value="Produtividade - Sacas ou Ton por Ha" for="prod7" />
+		<p:inputText id="prod7" size="5" />
+
+		<p:outputLabel value="Área em Hectare ou Alqueire" for="areahectare" />
+		<p:inputText id="areahectare" size="5" />
+
+		<p:outputLabel value="QTD Animais" for="qtdanimais" />
+		<p:inputText id="qtdanimais" size="5" />
+
+		<p:outputLabel value="Peso Médio dos Animais (Kg ou @)"
+			for="pesomedio" />
+		<p:inputText id="pesomedio" size="5" />
+
+		<p:outputLabel value="Espécie Forrageira" for="especieforrageira" />
+		<p:inputText id="especieforrageira" size="5" />
+
+		<p:outputLabel value="Área para Reforma em Ha" for="areareforma" />
+		<p:inputText id="areareforma" size="5" />
+
+		<p:outputLabel value="Piquete Rotacionado?" for="piquete" />
+		<p:selectOneMenu id="piquete">
+			<f:selectItem itemLabel="Sim ou Não" />
+		</p:selectOneMenu>
+
+		<p:outputLabel value="Irrigação?" for="irrigação" />
+		<p:selectOneMenu id="irrigação">
+			<f:selectItem itemLabel="Sim ou Não" />
+		</p:selectOneMenu>
+
+		<p:outputLabel value="Faz Adubação?" for="adubacao" />
+		<p:selectOneMenu id="adubacao">
+			<f:selectItem itemLabel="Sim ou Não" />
+		</p:selectOneMenu>
+
+		<p:outputLabel value="Observação" for="observacao" />
+		<p:inputText id="observacao" size="5" />
+
+</p:panelGrid>
+
+</ui:composition>
